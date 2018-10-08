@@ -1,0 +1,14 @@
+function timedReading(maxLength, text) {
+  //coding and coding..
+  var empty = ''
+  const ptLessStr = text.replace(/[.,\/#!$%\^&\*;:{}=\-_`'~()?]/g,"")
+  let str = ptLessStr.replace(/\s{2,}/g," ");
+  const strArray = str.split(' ')
+const result = strArray.filter(strArray => strArray.length <= maxLength);
+if (result == empty) {
+return 0
+}
+else {
+ return result.length
+ }
+}
