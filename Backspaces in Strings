@@ -1,0 +1,18 @@
+
+function clean_string(s) {
+	if (s.includes('#') == true) {
+    let new_s = [];
+    for (let i=0; i<s.length; i++) {
+      if (s[i] == "#") {
+        new_s.pop()
+      }
+      else {
+        new_s.push(s[i])
+      }
+     }
+     return new_s.join('')
+    }
+  else {
+    return s
+  }
+};
